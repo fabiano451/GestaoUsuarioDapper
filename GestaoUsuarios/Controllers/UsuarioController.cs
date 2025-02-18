@@ -56,7 +56,7 @@ namespace GestaoUsuarios.Controllers
 		}
 
 		[HttpPut()]
-		public async Task<IActionResult> CreateUsuario(UsuarioEditarDto usuarioEditarDto)
+		public async Task<IActionResult> EditarUsuario(UsuarioEditarDto usuarioEditarDto)
 		{
 			var usuarios = await _usuarioInterface.EditarUsuario(usuarioEditarDto);
 
